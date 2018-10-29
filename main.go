@@ -15,8 +15,6 @@ type IoTEvent struct {
 }
 
 func main() {
-	// Disable ssl verification if you dont have valid certificate
-	// http.DefaultTransport.(*http.Transport).TLSClientConfig = &tls.Config{InsecureSkipVerify: true}
 
 	// Make the handler available for Remote Procedure Call by AWS Lambda
 	lambda.Start(apiCall)
